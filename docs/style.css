@@ -1,0 +1,152 @@
+/* Общие стили страниц проекта «Звёздный курс» */
+
+:root {
+  --bg: #f7f7f5;
+  --card: #ffffff;
+  --ink: #1d1d1f;
+  --muted: #6b6b70;
+  --line: #e2e2df;
+  --accent: #1c5d99;
+  --warn: #a8442a;
+  --ok: #2f7d4f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+header {
+  background: #12161c;
+  color: #fff;
+  padding: 28px 0 22px;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 { margin: 0 0 6px; font-size: 26px; }
+header p { margin: 0; color: #b9c2cc; }
+header a { color: #9ecbff; }
+
+nav { margin-top: 14px; }
+nav a {
+  display: inline-block;
+  margin-right: 16px;
+  color: #cfe4ff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+nav a:hover, nav a.on { border-bottom-color: #cfe4ff; }
+
+main { padding: 28px 0 60px; }
+
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+}
+
+h2 { margin: 0 0 14px; font-size: 21px; }
+h3 { margin: 22px 0 8px; font-size: 17px; }
+h3:first-child { margin-top: 0; }
+
+p { margin: 0 0 12px; }
+ul, ol { margin: 0 0 12px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 16px;
+  font-size: 15px;
+}
+th, td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+th { background: #f2f4f6; font-weight: 600; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+
+.note {
+  border-left: 3px solid var(--accent);
+  background: #f2f7fc;
+  padding: 12px 16px;
+  margin: 14px 0;
+  border-radius: 0 8px 8px 0;
+}
+.warn {
+  border-left: 3px solid var(--warn);
+  background: #fdf3f0;
+  padding: 12px 16px;
+  margin: 14px 0;
+  border-radius: 0 8px 8px 0;
+}
+.ok { color: var(--ok); font-weight: 600; }
+.bad { color: var(--warn); font-weight: 600; }
+.muted { color: var(--muted); }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  background: #fcfcfb;
+}
+.card h3 { margin-top: 0; }
+.card p:last-child { margin-bottom: 0; }
+
+.file {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding: 8px 0;
+}
+.file:last-child { border-bottom: none; }
+.file code { background: #f2f4f6; padding: 1px 6px; border-radius: 4px; }
+
+.download {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin: 4px 8px 4px 0;
+}
+.download:hover { background: #164a7a; }
+.download.alt { background: #40566b; }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 18px 0 40px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+code, pre { font-family: "Cascadia Mono", Consolas, monospace; font-size: 14px; }
+pre {
+  background: #f2f4f6;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  overflow-x: auto;
+}
