@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440"
+     font-family="-apple-system, Segoe UI, Roboto, Helvetica Neue, sans-serif">
+  <title>Схема аппарата: камера в носу, крыло, отсек парашюта, V-образные рули, двигатель</title>
+
+  <rect width="960" height="440" fill="#f4f7fa"/>
+
+  <!-- осевая линия -->
+  <line x1="60" y1="230" x2="900" y2="230" stroke="#c8d2dc" stroke-width="1" stroke-dasharray="14 6 3 6"/>
+
+  <!-- корпус -->
+  <rect x="170" y="204" width="578" height="52" rx="6" fill="#ffffff" stroke="#1c5d99" stroke-width="2"/>
+  <!-- носовой обтекатель -->
+  <path d="M170 204 C120 208, 108 222, 108 230 C108 238, 120 252, 170 256 Z"
+        fill="#e8f0f8" stroke="#1c5d99" stroke-width="2"/>
+
+  <!-- отсек парашюта -->
+  <rect x="450" y="210" width="170" height="40" rx="4" fill="none"
+        stroke="#8a9199" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <path d="M470 240 C480 218, 520 214, 536 232" fill="none" stroke="#8a9199" stroke-width="1.4"/>
+  <path d="M492 240 C500 224, 528 222, 540 236" fill="none" stroke="#8a9199" stroke-width="1.4"/>
+  <path d="M514 240 C520 230, 536 229, 546 238" fill="none" stroke="#8a9199" stroke-width="1.4"/>
+
+  <!-- двигатель и сопло -->
+  <rect x="700" y="208" width="90" height="44" rx="4" fill="#dfe6ed" stroke="#40566b" stroke-width="2"/>
+  <path d="M790 214 L812 206 L812 254 L790 246 Z" fill="#c4ced8" stroke="#40566b" stroke-width="2"/>
+
+  <!-- крыло (вид сбоку: показана хорда и место установки) -->
+  <path d="M300 256 L318 300 L424 288 L430 256 Z" fill="#e8f0f8" stroke="#1c5d99" stroke-width="2"/>
+
+  <!-- V-образные рули -->
+  <path d="M690 204 L706 170 L736 170 L722 204 Z" fill="#e8f0f8" stroke="#1c5d99" stroke-width="2"/>
+  <path d="M690 256 L706 290 L736 290 L722 256 Z" fill="#e8f0f8" stroke="#1c5d99" stroke-width="2"/>
+
+  <!-- антенна видео -->
+  <line x1="600" y1="204" x2="596" y2="176" stroke="#40566b" stroke-width="2"/>
+  <circle cx="596" cy="172" r="5" fill="none" stroke="#40566b" stroke-width="2"/>
+
+  <!-- камера -->
+  <circle cx="126" cy="230" r="10" fill="#ffffff" stroke="#1c5d99" stroke-width="2"/>
+  <circle cx="126" cy="230" r="4" fill="#1c5d99"/>
+
+  <!-- центр масс -->
+  <g stroke="#a8442a" stroke-width="2" fill="none">
+    <circle cx="417" cy="230" r="13"/>
+    <path d="M404 230 A13 13 0 0 1 430 230 Z" fill="#a8442a"/>
+    <path d="M417 217 A13 13 0 0 0 417 243 Z" fill="#a8442a"/>
+  </g>
+
+  <!-- выноски и подписи -->
+  <g stroke="#8a9199" stroke-width="1.2" fill="none">
+    <path d="M126 220 L126 120 L232 120"/>
+    <path d="M535 210 L535 128 L648 128"/>
+    <path d="M596 168 L596 92 L700 92"/>
+    <path d="M370 290 L370 340 L248 340"/>
+    <path d="M745 246 L745 300 L828 300"/>
+    <path d="M417 243 L417 282 L330 282"/>
+  </g>
+  <g fill="#1d1d1f" font-size="15">
+    <text x="238" y="115">Камера вперёд: она же даёт курс по солнцу</text>
+    <text x="654" y="123">Отсек парашюта: вытяжной и основной</text>
+    <text x="706" y="87">Антенна видеопередатчика</text>
+    <text x="242" y="335" text-anchor="end">Крыло: размах 98 см</text>
+    <text x="834" y="295">Двигатель: 800 г, 451 Н·с</text>
+    <text x="336" y="277" text-anchor="end">Центр масс, 53 см от носа</text>
+  </g>
+
+  <!-- размеры -->
+  <g stroke="#40566b" stroke-width="1.4">
+    <line x1="108" y1="392" x2="812" y2="392"/>
+    <line x1="108" y1="384" x2="108" y2="400"/>
+    <line x1="812" y1="384" x2="812" y2="400"/>
+    <line x1="300" y1="318" x2="424" y2="318"/>
+    <line x1="300" y1="312" x2="300" y2="324"/>
+    <line x1="424" y1="312" x2="424" y2="324"/>
+  </g>
+  <g fill="#40566b" font-size="14">
+    <text x="460" y="386" text-anchor="middle">длина 110 см</text>
+    <text x="362" y="336" text-anchor="middle">хорда 16 см</text>
+  </g>
+
+  <text x="60" y="42" fill="#6b6b70" font-size="15">Схема аппарата, вид сбоку. Масса 2,36 кг.</text>
+</svg>

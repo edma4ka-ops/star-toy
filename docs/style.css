@@ -150,3 +150,14 @@ pre {
   padding: 12px 14px;
   overflow-x: auto;
 }
+
+/* Схема аппарата в шапке главной страницы */
+.hero {
+  display: block;
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  margin: 18px auto 6px;
+  background: #f4f7fa;
+  border-radius: 10px;
+}
