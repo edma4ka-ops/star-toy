@@ -1,4 +1,4 @@
-# Выкладывание страниц игрушки на боевой сервер.
+﻿# Выкладывание страниц игрушки на боевой сервер.
 #   powershell -ExecutionPolicy Bypass -File deploy\deploy-site.ps1
 #
 # Что делает:
