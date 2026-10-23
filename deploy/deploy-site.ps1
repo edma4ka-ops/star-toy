@@ -1,4 +1,4 @@
-﻿# Выкладывание страниц игрушки на боевой сервер.
+# Выкладывание страниц игрушки на боевой сервер.
 #   powershell -ExecutionPolicy Bypass -File deploy\deploy-site.ps1
 #
 # Что делает:
@@ -10,7 +10,7 @@
 # а страницы игрушки живут в /opt/star-toy и переживают его развёртывания.
 
 param(
-    [string]$Server    = 'aks-server',
+    [string]$Server    = 'msk-server',
     [string]$RemoteTmp = '/tmp'
 )
 
